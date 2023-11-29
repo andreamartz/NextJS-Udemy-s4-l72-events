@@ -1,11 +1,13 @@
-// import Head from 'next/head';
+import Layout from '../components/layout/layout';
 
 import '../styles/globals.css';
 
+// Component is the page component for each page
 function MyApp({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />
-    // <h1>App</h1>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 
